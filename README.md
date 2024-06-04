@@ -18,3 +18,19 @@ this header is intended to be combined with other products or in-house protectio
 this can be used in a security related or core function of your app. \
 it will hide the actual destination of your calls which will make \
 a reverser have to manually trace the code.
+
+```cpp
+int main()
+{
+    // register the exception handler.
+    hermes::initialize();
+
+    // alias a function for a hermes-call.
+    HERMES_ADD(Sleep, void(*)(u32));
+   
+    // test
+    Sleep(5000);
+
+    system("pause");
+}
+```
