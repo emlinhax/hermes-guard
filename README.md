@@ -1,6 +1,6 @@
 # hermes guard
 this header will make it very difficult for a reverser to trace your calls. \
-on top of that it also makes static analysis very confusing. \
+its more effective against static analysis. dynamic analysis is only slightly more annoying.\
 all it does is hide the destination of a call and also mess with the return-stack.
 
 warning:
